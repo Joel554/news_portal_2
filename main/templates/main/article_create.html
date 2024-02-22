@@ -1,0 +1,12 @@
+article create
+{% extends "base.html" %}
+
+{% block content %}
+<form method="post" class="mt-5" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="mb-5 w-full bg-blue-500 hover:bg-blue-600 px-3 py-2">Submit</button>
+    <hr />
+</form>
+
+{% endblock content %}

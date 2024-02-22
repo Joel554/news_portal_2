@@ -1,4 +1,10 @@
-<body>
+{% extends "base.html" %}
 
-    contributor_list
-</body>
+{% block content %}
+<p>
+  contributor_list
+</p>
+{% for Contributor in contributors %}
+<li>{{ Contributor }}</li>
+{% endfor %}
+{% endblock content %}

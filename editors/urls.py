@@ -5,5 +5,5 @@ from .views import editors_list
 app_name = "editors"
 
 urlpatterns = [
-    path("pop", editors_list),
+    path("pop", editors_list, name="editors-list"),
 ]
